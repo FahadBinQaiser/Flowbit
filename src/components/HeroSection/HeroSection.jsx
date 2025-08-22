@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section className="flex space-y-6 text-gray-300 flex-col items-center justify-center h-screen text-center">
       <div className="flex items-center space-x-4">
         <h3 className="body_font text-gray-500">Trusted by</h3>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-1">
           {logos.map((logo, index) => (
             <div
               key={index}
