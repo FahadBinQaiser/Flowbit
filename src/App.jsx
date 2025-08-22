@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import HeroSection from "./components/HeroSection.jsx";
+import HeroSection from "./components/HeroSection/HeroSection.jsx";
 function App() {
   return (
     <>
