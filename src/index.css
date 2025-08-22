@@ -1,4 +1,17 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  src: url("/public/fonts/NeueHaasGrotDisp-75Bold-Trial.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   background-color: #7c3aed;
+  font-family: "Neue Haas Grotesk";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
