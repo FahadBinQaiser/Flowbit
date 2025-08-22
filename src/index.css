@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montaga&family=Readex+Pro:wght@160..700&family=Space+Grotesk:wght@300..700&display=swap");
 @import "tailwindcss";
 
 @font-face {
   font-family: "Neue Haas Grotesk";
-  src: url("/public/fonts/NeueHaasGrotDisp-75Bold-Trial.otf") format("truetype");
+  src: url("/fonts/NeueHaasGrotDisp-75Bold-Trial.otf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
-
+.body_font {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #fafafa;
+}
 body {
-  background-color: #7c3aed;
+  background-color: #111827;
   font-family: "Neue Haas Grotesk";
   display: flex;
   justify-content: center;
