@@ -1,4 +1,5 @@
 import React from "react";
+import Glow from "../Glow/Glow";
 const logos = [
   "src/components/logos/google.svg",
   "src/components/logos/linkedin.png",
@@ -7,14 +8,15 @@ const logos = [
 
 const HeroSection = () => {
   return (
-    <section className="flex space-y-6 text-gray-300 flex-col items-center justify-center h-screen text-center">
+    <section className="flex pt-10 space-y-6 text-gray-300 flex-col items-center justify-center h-screen text-center">
+      <Glow />
       <div className="flex items-center space-x-4">
         <h3 className="body_font text-gray-500">Trusted by</h3>
         <div className="flex items-center space-x-1">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="w-10 h-10 flex items-center justify-center bg-[#7C3AED] rounded-3xl"
+              className="w-10 h-10 flex items-center justify-center bg-[#1F2937] rounded-3xl"
             >
               <img src={logo} alt="logo" className="w-6 h-6 object-contain" />
             </div>
