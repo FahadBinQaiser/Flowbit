@@ -31,7 +31,7 @@ const HeroSection = () => {
         We offer design + development services for SaaS founders, focused on
         high-converting landing pages.
       </p>
-      <button className="bg-[#7C3AED] hover:bg-[#C084FC] transition-colors duration-300 cursor-pointer body_font text-white py-2 px-4 rounded">
+      <button className="bg-[#7C3AED] hover:bg-[#C084FC] transition-colors duration-300 cursor-pointer body_font text-white py-5 px-20 rounded">
         Book a CALL
       </button>
     </section>
