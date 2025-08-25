@@ -14,8 +14,4 @@
 body {
   background-color: #111827;
   font-family: "Neue Haas Grotesk";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }

@@ -5,8 +5,8 @@ import HeroSection from "./components/HeroSection/HeroSection.jsx";
 function App() {
   return (
     <>
-      <HeroSection />
       <Navbar />
+      <HeroSection />
     </>
   );
 }

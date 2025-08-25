@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl bg-[#1F2937] backdrop-blur-lg rounded-2xl shadow-lg z-50">
+    <nav className=" bg-transparent max-w-6xl mx-auto my-4 w-full backdrop-blur-lg rounded-2xl shadow-2xl z-50">
       <div className="flex items-center justify-between px-6 py-3">
         <div className="text-2xl body_font text-white">Flowbit</div>
 
