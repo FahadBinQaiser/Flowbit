@@ -5,23 +5,27 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className=" bg-transparent max-w-6xl mx-auto my-4 w-full backdrop-blur-lg rounded-2xl shadow-2xl z-50">
+    <nav className="my-4 max-w-4xl mx-auto w-full z-50">
       <div className="flex items-center justify-between px-6 py-3">
-        <div className="text-2xl body_font text-white">Flowbit</div>
+        <div className="text-3xl body_font text-white">Flowbit</div>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div
+          className="hidden md:flex justify-end items-center bg-transparent backdrop-blur-3xl px-8 py-3 rounded-xl space-x-8"
+          style={{
+            boxShadow: "3px 0 12px rgba(250, 250, 250, 0.14)",
+          }}
+        >
           {["Home", "Features", "Pricing", "About"].map((link) => (
             <a key={link} href="#" className="relative text-white group">
               {link}
               <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#C084FC] transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-        </div>
-
-        <div className="hidden md:block">
-          <button className="bg-[#7C3AED] hover:bg-[#C084FC] transition-colors duration-300 cursor-pointer body_font text-white py-2 px-4 rounded">
-            Book a CALL
-          </button>
+          <div className="hidden md:flex">
+            <button className="bg-[#C084FC] hover:bg-[#7C3AED] transition-colors duration-300 cursor-pointer body_font text-white py-2 px-4 rounded">
+              Book a CALL
+            </button>
+          </div>
         </div>
 
         <button className="md:hidden text-white" onClick={() => setOpen(!open)}>
