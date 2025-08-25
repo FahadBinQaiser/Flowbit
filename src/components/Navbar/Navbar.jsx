@@ -33,24 +33,26 @@ const Navbar = () => {
         </button>
       </div>
 
-      {open && (
-        <div className="md:hidden border-t border-white/20 bg-black/70 backdrop-blur-lg rounded-b-2xl">
-          <div className="flex flex-col items-center py-6 space-y-6">
-            {["Home", "Features", "Pricing", "About"].map((link) => (
-              <a
-                key={link}
-                href="#"
-                className="text-white text-lg font-medium hover:text-purple-300 transition"
-              >
-                {link}
-              </a>
-            ))}
-            <button className="px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold shadow-md hover:scale-105 transition">
-              Get Started
-            </button>
-          </div>
+      <div
+        className={`md:hidden fixed top-20 right-0 w-64 bg-[#fafafa] backdrop-blur-3xl shadow-xl rounded-l-2xl transform transition-transform duration-300 ease-in-out z-50
+      ${open ? "translate-x-0" : "translate-x-full"}`}
+      >
+        <div className="flex flex-col items-center px-6 py-10 space-y-6">
+          {["Home", "Features", "Pricing", "About"].map((link) => (
+            <a
+              key={link}
+              href="#"
+              className="text-lg font-medium text-[#C084FC] hover:text-[#7C3AED] transition"
+            >
+              {link}
+            </a>
+          ))}
+
+          <button className="bg-[#C084FC] hover:bg-[#7C3AED] transition-colors duration-300 cursor-pointer body_font w-full text-white py-2 px-4 rounded">
+            Book a CALL
+          </button>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
