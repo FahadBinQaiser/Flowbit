@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="my-4 max-w-4xl mx-auto w-full z-50">
       <div className="flex items-center justify-between px-6 py-3">
-        <div className="text-3xl body_font text-white">Flowbit</div>
+        <div className="text-3xl text-white">Flowbit</div>
 
         <div
           className="hidden md:flex justify-end items-center bg-transparent backdrop-blur-3xl px-8 py-3 rounded-xl space-x-8"

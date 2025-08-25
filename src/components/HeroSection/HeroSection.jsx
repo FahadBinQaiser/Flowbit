@@ -4,7 +4,7 @@ const logos = ["/logos/google.svg", "/logos/linkedin.png", "/logos/notion.svg"];
 
 const HeroSection = () => {
   return (
-    <section className="flex pt-0 sm:pt-16 space-y-6 text-gray-300 flex-col items-center justify-center text-center">
+    <section className="flex space-y-6 px-4 sm:px-0 text-gray-300 flex-col items-center justify-center text-center h-[70vh]">
       <div className="absolute inset-0 -z-10">
         <LightRays
           raysOrigin="top-center"
@@ -32,7 +32,7 @@ const HeroSection = () => {
           ))}
         </div>
       </div>
-      <h1 className="text-7xl text-balance text-[#C084FC] font-bold">
+      <h1 className="text-5xl sm:text-5xl md:text-7xl text-pretty sm:text-balance text-[#C084FC] font-bold">
         Your SaaS is brilliant. Let’s make your landing page prove it.
       </h1>
       <p className="body_font">
