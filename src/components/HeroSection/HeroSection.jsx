@@ -1,11 +1,6 @@
 import React from "react";
-import Glow from "../Glow/Glow";
 import LightRays from "./LightRays";
-const logos = [
-  "src/components/logos/google.svg",
-  "src/components/logos/linkedin.png",
-  "src/components/logos/notion.svg",
-];
+const logos = ["/logos/google.svg", "/logos/linkedin.png", "/logos/notion.svg"];
 
 const HeroSection = () => {
   return (
