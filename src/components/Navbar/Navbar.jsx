@@ -41,7 +41,7 @@ const Navbar = () => {
         className={`md:hidden fixed top-20 right-0 w-64 bg-transparent backdrop-blur-3xl shadow-xl rounded-l-2xl transform transition-transform duration-300 ease-in-out z-50
       ${open ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex flex-col items-center px-6 py-10 space-y-6">
+        <div className="flex flex-col body_font items-center px-6 py-10 space-y-6">
           {["Home", "Features", "Pricing", "About"].map((link) => (
             <a
               key={link}
