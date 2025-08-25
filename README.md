@@ -1,6 +1,6 @@
 # FlowBit
 
-A **React.js based Hero Section**
+A **React.js based Hero Section made with Tailwind Css**
 
 ## Color Palette
 
