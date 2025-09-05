@@ -3,42 +3,70 @@ import LightRays from "./HeroSection/LightRays";
 
 const AboutSection = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-4 sm:px-0 py-24 space-y-10 bg-gradient-to-br from-[#1F2937] via-[#2d1a3a] to-[#111827] rounded-3xl mt-20 shadow-2xl overflow-hidden border border-[#2d1a3a]/40 backdrop-blur-lg">
+    <section className="relative flex flex-col items-center justify-center text-center px-4 sm:px-0 py-24 space-y-10  rounded-3xl mt-20 shadow-2xl overflow-hidden border border-[#2d1a3a]/40 backdrop-blur-lg">
       {/* Animated Accent Gradient Blob */}
-      <div className="absolute -top-24 -left-24 w-96 h-96 bg-gradient-to-tr from-[#C084FC]/60 via-[#7C3AED]/40 to-transparent rounded-full blur-3xl opacity-60 animate-pulse z-0" />
-      <h2 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C084FC] via-[#7C3AED] to-[#A5B4FC] drop-shadow-lg tracking-tight">
-        About Flowbit
-      </h2>
-      <p className="body_font max-w-2xl text-gray-200 text-lg md:text-xl leading-relaxed drop-shadow">
-        <span className="bg-[#C084FC]/10 px-3 py-1 rounded-xl backdrop-blur-sm">
-          Flowbit
-        </span>{" "}
-        is dedicated to helping SaaS founders create visually stunning and
-        high-converting landing pages.
-        <br className="hidden md:block" />
-        Our team blends design and development expertise to deliver results that
-        make your product{" "}
-        <span className="text-[#C084FC] font-semibold">stand out</span> in a
-        crowded market.
-      </p>
-      <div className="flex flex-col sm:flex-row gap-8 justify-center items-center z-10">
-        <div className="relative group bg-[#111827]/80 border border-[#C084FC]/20 rounded-2xl p-8 shadow-xl w-72 backdrop-blur-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
-          <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-[#C084FC]/40 to-transparent rounded-full blur-xl opacity-40 group-hover:opacity-70 transition-opacity" />
-          <h3 className="text-2xl font-bold text-[#C084FC] mb-2 tracking-wide">
-            Design
-          </h3>
-          <p className="body_font text-gray-300 text-base">
-            Modern, user-focused UI/UX tailored for SaaS products.
-          </p>
-        </div>
-        <div className="relative group bg-[#111827]/80 border border-[#C084FC]/20 rounded-2xl p-8 shadow-xl w-72 backdrop-blur-md overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">
-          <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-gradient-to-tr from-[#7C3AED]/40 to-transparent rounded-full blur-xl opacity-40 group-hover:opacity-70 transition-opacity" />
-          <h3 className="text-2xl font-bold text-[#C084FC] mb-2 tracking-wide">
-            Development
-          </h3>
-          <p className="body_font text-gray-300 text-base">
-            Fast, responsive, and scalable landing pages built for conversion.
-          </p>
+      <div className="mx-auto max-w-4xl space-y-6">
+        <div className="rounded-full blur-3xl opacity-60 animate-pulse z-0" />
+        <h2 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C084FC] via-[#7C3AED] to-[#C084FC] drop-shadow-lg tracking-tight">
+          Here's what Flowbit can do for you
+        </h2>
+        <p className="body_font text-balance text-gray-200 text-lg md:text-xl leading-relaxed drop-shadow">
+          <span className="bg-[#C084FC]/10 px-3 py-1 rounded-xl backdrop-blur-sm">
+            Flowbit
+          </span>{" "}
+          is dedicated to helping SaaS founders create visually stunning and
+          high-converting landing pages. Our team blends design and development
+          expertise to deliver results that make your product{" "}
+          <span className="text-[#C084FC] font-semibold">stand out</span> in a
+          crowded market.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center z-10">
+          {/* Design Box */}
+          <div className="relative group bg-gradient-to-br from-[#1e1932]/90 via-[#2d1a3a]/90 to-[#111827]/90 border border-[#C084FC]/30 rounded-3xl p-8 shadow-2xl w-80 backdrop-blur-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(192,132,252,0.25)] hover:border-[#C084FC]/60">
+            <div className="absolute -top-8 -right-8 w-28 h-28 bg-gradient-to-br from-[#C084FC]/40 to-transparent rounded-full blur-2xl opacity-40 group-hover:opacity-70 transition-opacity" />
+            <div className="flex items-center justify-center mb-4">
+              <svg
+                className="w-10 h-10 text-[#C084FC] drop-shadow"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                viewBox="0 0 24 24"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="4" />
+                <path d="M7 7h10v10H7z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-[#C084FC] mb-2 tracking-wide">
+              Design
+            </h3>
+            <p className="body_font text-gray-300 text-base">
+              Modern, user-focused UI/UX tailored for SaaS products.
+            </p>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#C084FC]/40 via-[#7C3AED]/40 to-transparent rounded-b-3xl opacity-70" />
+          </div>
+          {/* Development Box */}
+          <div className="relative group bg-gradient-to-bl from-[#1e1932]/90 via-[#2d1a3a]/90 to-[#111827]/90 border border-[#7C3AED]/30 rounded-3xl p-8 shadow-2xl w-80 backdrop-blur-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(124,58,237,0.25)] hover:border-[#7C3AED]/60">
+            <div className="absolute -bottom-8 -left-8 w-28 h-28 bg-gradient-to-tr from-[#7C3AED]/40 to-transparent rounded-full blur-2xl opacity-40 group-hover:opacity-70 transition-opacity" />
+            <div className="flex items-center justify-center mb-4">
+              <svg
+                className="w-10 h-10 text-[#C084FC] drop-shadow"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                viewBox="0 0 24 24"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <path d="M8 8h8v8H8z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-[#C084FC] mb-2 tracking-wide">
+              Development
+            </h3>
+            <p className="body_font text-gray-300 text-base">
+              Fast, responsive, and scalable landing pages built for conversion.
+            </p>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#7C3AED]/40 via-[#C084FC]/40 to-transparent rounded-b-3xl opacity-70" />
+          </div>
         </div>
       </div>
       {/* Decorative bottom accent */}
