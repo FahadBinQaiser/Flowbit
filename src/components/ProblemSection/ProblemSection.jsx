@@ -28,7 +28,7 @@ const ProblemSection = () => {
   ];
 
   return (
-    <section className="problem-section relative py-24 px-4 sm:px-8 lg:px-0 overflow-hidden">
+    <section className="problem-section relative py-24 px-4 sm:px-8 xl:px-0 overflow-hidden">
       <div className="mx-auto max-w-6xl text-center space-y-4">
         <div className="space-y-6">
           <h2 className="text-5xl py-3 md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C084FC] via-[#7C3AED] to-[#C084FC] tracking-tight drop-shadow-lg">
