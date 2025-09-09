@@ -21,14 +21,14 @@ const ProblemSection = () => {
     {
       icon: Users,
       title: "Legacy System Bottleneck",
-      problem: "Legacy CRMs slow you down instead of speeding you up.",
+      problem: "Legacy CRMs slow you down.",
       impact: "Your team fights the system instead of closing deals.",
       iconColor: "text-[#C084FC]",
     },
   ];
 
   return (
-    <section className="problem-section relative py-24 px-4 sm:px-0 rounded-3xl overflow-hidden">
+    <section className="problem-section relative py-24 px-4 sm:px-8 lg:px-0 overflow-hidden">
       <div className="mx-auto max-w-6xl text-center space-y-4">
         <div className="space-y-6">
           <h2 className="text-5xl py-3 md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C084FC] via-[#7C3AED] to-[#C084FC] tracking-tight drop-shadow-lg">
@@ -37,7 +37,7 @@ const ProblemSection = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-[#C084FC] to-[#7C3AED] mx-auto rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 pt-4 max-w-5xl mx-auto">
           {problems.map((item, index) => {
             const IconComponent = item.icon;
             return (
@@ -54,11 +54,11 @@ const ProblemSection = () => {
                       />
                     </div>
                   </div>
-                  <h3 className="text-xl font-bold text-[#C084FC]">
+                  <h3 className="text-3xl text-balance font-bold text-[#C084FC]">
                     {item.title}
                   </h3>
-                  <div className="space-y-4 text-left">
-                    <p className="text-[#C084FC]/80 font-medium">
+                  <div className=" text-xl text-pretty text-center">
+                    <p className="text-[#C084FC]/80 text-lg font-medium">
                       {item.problem}
                     </p>
                     <p className="text-gray-300 text-sm leading-relaxed">
