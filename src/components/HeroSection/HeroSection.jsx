@@ -4,7 +4,7 @@ const logos = ["/logos/google.svg", "/logos/linkedin.png", "/logos/notion.svg"];
 
 const HeroSection = () => {
   return (
-    <section className="flex space-y-6 px-4 sm:px-0 text-gray-300 flex-col items-center justify-center text-center h-[67vh]">
+    <section className="flex space-y-6 px-4 sm:px-0 text-gray-300 flex-col items-center justify-center text-center pb-20 h-[80vh]">
       <div className="absolute inset-0 h-[100vh] -z-10">
         <LightRays
           raysOrigin="top-center"
