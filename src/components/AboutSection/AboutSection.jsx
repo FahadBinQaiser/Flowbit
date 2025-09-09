@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section className="relative py-20 bg-[#0f0b1e] text-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-5xl text-balance md:text-6xl headline-gradient font-extrabold text-[#C084FC] mb-4 tracking-wide">
+          <h2 className="text-5xl text-pretty md:text-6xl headline-gradient font-extrabold text-[#C084FC] mb-4 tracking-wide">
             Here's what Flowbit can do for you
           </h2>
           <p className="text-gray-300 body_font max-w-2xl mx-auto text-lg">
